@@ -1,0 +1,77 @@
+@keyframes fadein {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(148, 148, 255);
+    text-decoration: underline;
+}
+
+main {
+    padding: 3em;
+}
+
+.hide_target {
+    display: none;
+}
+
+.text_to_write {
+    color: grey;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+#win {
+    animation: fadein 0.7s;
+    color: blue;
+}
+
+#lose {
+    animation: fadein 0.6s alternate-reverse 3;
+    color: red;
+}
+
+.popup {
+    animation: fadein 1s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #b9ffdc;
+    border-radius: 15%;
+    padding: 5%;
+}
+
+#final_time {
+    color: rgb(117, 117, 255);
+}
+
+#final_score {
+    animation: fadein 1.5s alternate-reverse 0.3s infinite;
+    color: rgb(255, 136, 0);
+}
+
+#last_score {
+    padding: 0.3%;
+}
+
+button {
+    margin: 0.5%;
+    font-size: medium;
+    color: rgb(97, 97, 97);
+    border-color: silver;
+    border-width: 0.2em;
+    border-radius: 15%;
+}

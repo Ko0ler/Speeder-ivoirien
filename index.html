@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="Script/config.js" defer></script>
+        <script src="Script/script.js" defer></script>
+        <script src="Script/main.js" defer></script>
+        <title>Juste un jeu</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>Bienvenue dans ce jeu de merde</h1>
+                <h3>Montre que t'es un tché</h3>
+                <div id="last_score"></div>
+            </section>
+        </header>
+        <main>
+            <section id="choice_section">
+                <p><em>Fait tes choix d'abord ...</em></p>
+                <div id="content_type">
+                    <label for="word"><u>Mots</u></label>
+                    <input type="radio" id="word" name="content_type" />
+                    <label for="phrase"><u>Phrases</u></label>
+                    <input type="radio" id="phrase" name="content_type" />
+                    <label for="context">Contexte</label>
+                    <select name="context" id="context">
+                        <option value="default">Choisi</option>
+                    </select>
+                </div>
+            </section>
+            <section id="gampelay_section" class="hide_target">
+                <div>
+                    <br/>
+                    <h1 id="challenge_number"></h1>
+                    <h2 id="review"></h2>
+                    <h3 id="info"></h3>
+                </div>
+                <div>
+                    <br/>
+                    <p id="instruction"></p>
+                    <div id="input_field">
+                        <input type="text" placeholder="Faut gbôssô ici" id="user_input">
+                        <button id="input_submit" type="button">C'est zo</button>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <section id="final_info">
+            <h3 id="final_time"></h3>
+            <h2 id="final_score"></h2>
+            <br/>
+        </section>
+    </body>
+</html>
