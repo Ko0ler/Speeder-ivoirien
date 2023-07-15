@@ -154,7 +154,7 @@ async function startGame(type_of_item, game_context) {
   let main = document.querySelector("main");
   main.innerHTML = ``; // Clear main content
   time_spent = (Date.now() - starting_time)/1000;
-  final_time.innerHTML = `Temps : <strong>${time_spent} seconds</strong>`;
+  final_time.innerHTML = `Temps : <strong>${time_spent} secondes</strong>`;
   final_score.setAttribute("id", "final_score");
   final_score.textContent = `Score final : ${score}/${number_of_item}`;
   final_info.setAttribute("class", "popup");
